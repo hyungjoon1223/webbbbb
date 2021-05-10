@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -7,7 +11,7 @@
     overflow: hidden;
 }
 
-div#header-center {
+#header-center {
     margin: 0 auto;
     width: 1190px;
 }
@@ -16,12 +20,12 @@ div#header-center {
     display: inline-block;
     width: 222px;
     height: 52px;
-    background: url(./sp_main_16ad06.png) 0 -158px no-repeat;
+    background: url(./sp_main_16ad06.png) 0-158px no-repeat;
     background-size: 433px 409px;
-
+    vertical-align: middle;
 }
 
-#header-search a{
+#header-search a {
     text-decoration: none;
 }
 
@@ -29,4 +33,40 @@ div#header-center {
     width: 582px;
     height: 52px;
     display: inline-block;
+    border: 2px solid #19ce60;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#header-search fieldset input {
+    border:none;
+    width: 444px;
+    height: 24px;
+    padding: 17px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+
+#header-search fieldset button {
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    background-color: #19ce60;
+    /*border-radius: 0 2px 2px 0;*/
+}
+
+#search-image {
+    background: url(./sp_main_16ad06.png) -270px -342px no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+    background-size: 433px 409px;
 }
