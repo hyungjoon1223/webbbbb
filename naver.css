@@ -30,38 +30,57 @@
 }
 
 #header-search fieldset {
+    position: relative; /* 5번*/
+    margin-left: 20px;
     width: 582px;
-    height: 52px;
+    height: 56px;
     display: inline-block;
     border: 2px solid #19ce60;
     border-radius: 2px;
-    vertical-align: middle;
-    margin-left: 20px;
+    vertical-align: middle; /* 로고와 검색창의 크기를 맞춤*/
+    padding: 13px 15px;
 }
-
 #header-search fieldset input {
-    border:none;
+    border: none;
+    outline: none; /* css는 외우는 것 */ /*눌럿을때 뭔가 배경같은게 나오는게 아웃라인 더러워 보이니까 논으로 지우자 */
     width: 444px;
     height: 24px;
-    padding: 17px 15px;
     margin: 1px;
-    background-color: #fff;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     color: #000;
     font-weight: 700;
-    outline: 0;
 }
-
 #header-search fieldset button {
+    position: absolute;
+    right: -2px;
+    top: -2px;
     width: 56px;
     height: 56px;
     border: none;
     padding: 0;
-    background-color: #19ce60;
-    /*border-radius: 0 2px 2px 0;*/
+    background: #19ce60;
 }
-
+#search-keyboard{
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    margin: -6px 0 0 -10px;
+    background: url(./sp_main_16ad06.png) -160px -327px no-repeat;
+    background-size: 433px 409px;
+}
+#search-history{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    vertical-align: top;
+    background: url(./sp_main_16ad06.png) -408px -128px no-repeat;
+    background-size: 433px 409px;
+    margin: 10px 8px;
+}
 #search-image {
     background: url(./sp_main_16ad06.png) -270px -342px no-repeat;
     display: inline-block;
@@ -69,4 +88,85 @@
     height: 22px;
     vertical-align: top;
     background-size: 433px 409px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav li:first-child span:first-child {
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0;
+}
+nav li span:first-child {
+    height: 20px;
+    display: inline-block;
+    background-image: url(./sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 14px;
+}
+nav li:nth-child(2) span:first-child {
+    width: 40px;
+    background-position: -279px -52px;
+}
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+nav li:nth-child(8) span:first-child {
+    margin-left: 16px;
+    width: 26px;
+    background-position: -279px -208px;
+}
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+nav li:nth-child(13) span:first-child {
+    width: 28px;
+    background-position: -234px -233px;
+}
+nav li:nth-child(14) span:first-child {
+    width: 30px;
+    background-position: -195px -233px;
+}
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
 }
