@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
-.blind {
+.blind{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -10,47 +9,65 @@
     margin: -1px;
     overflow: hidden;
 }
-
-#header-center {
-    margin: 0 auto;
-    width: 1190px;
+.center-align{
+    margin:0 auto;
+    width:1190px;
+}
+header{
+    height: 160px;
 }
 
+#header-top{
+    float:right;
+    margin-right: 50px;
+}
+
+#header-top span{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+#header-search{
+    clear:both;
+}
 #header-search h1 {
     display: inline-block;
     width: 222px;
     height: 52px;
-    background: url(./sp_main_16ad06.png) 0-158px no-repeat;
+    background: url(sp_main_16ad06.png) 0 -158px no-repeat;
     background-size: 433px 409px;
+    overflow: hidden;
+    text-indent: 110%;
     vertical-align: middle;
 }
-
-#header-search a {
+#header-search a{
     text-decoration: none;
 }
-
-#header-search fieldset {
-    position: relative; /* 5번*/
-    margin-left: 20px;
+#header-search fieldset{
+    position: relative;
     width: 582px;
     height: 56px;
     display: inline-block;
     border: 2px solid #19ce60;
     border-radius: 2px;
-    vertical-align: middle; /* 로고와 검색창의 크기를 맞춤*/
+    vertical-align: middle;
+    margin-left: 20px;
     padding: 13px 15px;
 }
 #header-search fieldset input {
     border: none;
-    outline: none; /* css는 외우는 것 */ /*눌럿을때 뭔가 배경같은게 나오는게 아웃라인 더러워 보이니까 논으로 지우자 */
     width: 444px;
     height: 24px;
-    margin: 1px;
     padding: 0;
+    margin: 1px;
+    background-color: #fff;
     font-size: 18px;
     line-height: 24px;
     color: #000;
     font-weight: 700;
+    outline: none;
 }
 #header-search fieldset button {
     position: absolute;
@@ -59,8 +76,8 @@
     width: 56px;
     height: 56px;
     border: none;
-    padding: 0;
-    background: #19ce60;
+    padding:0;
+    background-color: #19ce60;
 }
 #search-keyboard{
     top: 50%;
@@ -82,34 +99,41 @@
     margin: 10px 8px;
 }
 #search-image {
-    background: url(./sp_main_16ad06.png) -270px -342px no-repeat;
+    background: url(sp_main_16ad06.png) -270px -342px no-repeat;
     display: inline-block;
     width: 22px;
     height: 22px;
     vertical-align: top;
     background-size: 433px 409px;
 }
-nav ul {
-    margin: 0;
-    padding: 0;
+nav {
+    height: 52px;
+    border-top: 1px solid #d1d8e4;
+    border-bottom: 1px solid #d1d8e4;
+    padding: 6px 70px;
+}
+nav ul{
+    display: inline-block;
+    margin:0;
+    padding:0;
     list-style: none;
 }
-nav li {
+nav li{
     display: inline-block;
 }
-nav li:first-child span:first-child {
+nav li:first-child span:first-child{
     width: 25px;
     background-position: 0 -285px;
     margin-left: 0;
 }
-nav li span:first-child {
-    height: 20px;
+nav li span:first-child{
+    height:20px;
     display: inline-block;
-    background-image: url(./sp_nav.png);
+    background: url(sp_nav.png);
     background-repeat: no-repeat;
     margin-left: 14px;
 }
-nav li:nth-child(2) span:first-child {
+ nav li:nth-child(2) span:first-child {
     width: 40px;
     background-position: -279px -52px;
 }
@@ -169,4 +193,18 @@ nav li:nth-child(15) span:first-child {
 nav li:nth-child(16) span:first-child {
     width: 26px;
     background-position: -279px 0;
+} 
+nav li.more:first-child span:first-child{
+    width:55px;
+    background-position: 0 -104px;
+}
+.nav-divider{
+    display: inline-block;
+    width:1px;
+    height:14px;
+    margin:18px 10px 0;
+}
+
+main{
+    background-color:darkblue;
 }
